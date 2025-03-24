@@ -47,17 +47,25 @@ const ContactPage: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://bytesspheredigitals.onrender.com/send-email",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
       if (data.success) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "", projectType: "website" });
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          projectType: "website",
+        });
       } else {
         setError(data.error || "Something went wrong. Please try again.");
       }
@@ -70,7 +78,9 @@ const ContactPage: React.FC = () => {
   };
 
   const scrollToContactForm = () => {
-    document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("contact-form")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -78,7 +88,10 @@ const ContactPage: React.FC = () => {
       {/* Hero Section */}
       <div className="hero-section">
         <h1>Ready to Transform Your Digital Presence?</h1>
-        <p>Let's create something extraordinary together. Your success story starts here.</p>
+        <p>
+          Let's create something extraordinary together. Your success story
+          starts here.
+        </p>
         <button className="start-project-btn" onClick={scrollToContactForm}>
           Start Your Project
         </button>
@@ -91,7 +104,10 @@ const ContactPage: React.FC = () => {
         {submitted ? (
           <div className="success-message">
             <p className="success-title">Thank you for reaching out!</p>
-            <p>We've received your message and will get back to you within 24 hours.</p>
+            <p>
+              We've received your message and will get back to you within 24
+              hours.
+            </p>
           </div>
         ) : (
           <form onSubmit={handleSubmit}>
@@ -150,7 +166,11 @@ const ContactPage: React.FC = () => {
               ></textarea>
             </div>
 
-            <button type="submit" disabled={isSubmitting} className="submit-btn">
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="submit-btn"
+            >
               {isSubmitting ? "Submitting..." : "Start Your Project"}
             </button>
           </form>
