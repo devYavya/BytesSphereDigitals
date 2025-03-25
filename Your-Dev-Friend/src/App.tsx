@@ -24,6 +24,7 @@ const ScrollToTop = () => {
 const App: React.FC = () => {
   return (
     <>
+  
       <Navbar />
       <ScrollToTop />
       <Routes>

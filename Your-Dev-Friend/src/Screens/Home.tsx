@@ -8,6 +8,15 @@ import { Link } from "react-router-dom";
 const Home: React.FC = () => {
   return (
     <div>
+      {/* <!-- Elfsight Popup | PopUP Bytes Digital --> */}
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+      <div
+        className="elfsight-app-fbafde17-b30f-48b4-bc27-f66876e4ce72"
+        data-elfsight-app-lazy
+      ></div>
       <div className="home">
         <div className="hero">
           <div className="hero-content">
