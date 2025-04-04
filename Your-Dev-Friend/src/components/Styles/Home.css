@@ -24,6 +24,7 @@ body {
   height: 100%;
   backdrop-filter: blur(5px);
   background: rgba(111, 172, 242, 0.2);
+  /* Adjust transparency */
 }.hero {
   display: flex;
   flex-direction: column;
