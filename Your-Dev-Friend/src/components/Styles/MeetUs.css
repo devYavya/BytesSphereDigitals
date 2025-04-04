@@ -11,7 +11,7 @@
 .meet-our-team-container {
     text-align: center;
     padding: 40px 20px;
-    /* background: linear-gradient(155deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%); */
+    background: whitesmoke;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -22,7 +22,7 @@
 .meet-our-team-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--white);
+    color: #1E3C72;
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -37,7 +37,7 @@
 .team-member-container {
     width: 100%;
     max-width: 1000px;
-    background: var(--white);
+    background: linear-gradient(135deg, #1E3C72, rgb(169, 169, 174));
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -55,18 +55,19 @@
     flex: 1;
     padding-right: 30px;
     text-align: left;
+    color: var(--white);
 }
 
 .team-member-text h3 {
     font-size: 1.8rem;
-    color: var(--dark-text);
+    color: var(--whitesmoke);
     margin-bottom: 10px;
     font-weight: 700;
 }
 
 .team-member-bio {
     font-size: 0.95rem;
-    color: var(--gray-text);
+    color: white;
     line-height: 1.6;
     margin-bottom: 8px;
 }
