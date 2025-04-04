@@ -37,7 +37,7 @@
 .team-member-container {
     width: 100%;
     max-width: 1000px;
-    background: linear-gradient(135deg, #1E3C72, rgb(169, 169, 174));
+    background: linear-gradient(135deg, #1E3C72, rgb(199, 146, 207));
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
