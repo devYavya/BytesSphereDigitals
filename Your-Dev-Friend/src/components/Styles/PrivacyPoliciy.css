@@ -7,7 +7,6 @@
     color: #000000;
     background-color: #ffffff;
 }
-
 .privacy-policy h1 {
     text-align: center;
     color: #222;
@@ -16,7 +15,7 @@
 
 .privacy-policy h2 {
     margin-top: 20px;
-    color: #e42c2c;
+    color: #1581df;
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }

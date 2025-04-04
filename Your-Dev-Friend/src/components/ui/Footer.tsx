@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             {/* <h3 className="footer-heading">Connect</h3> */}
             <div className="footer-social-icons">
               <a
-                href="https://github.com/devcraft"
+                href="https://github.com/devYavya"
                 aria-label="GitHub"
                 className="footer-social-icon"
               >
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/company/devcraft"
+                href="https://linkedin.com/yavyasharma"
                 aria-label="LinkedIn"
                 className="footer-social-icon"
               >

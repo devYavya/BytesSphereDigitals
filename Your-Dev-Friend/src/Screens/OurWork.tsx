@@ -1,81 +1,68 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "../components/Styles/OurWork.css";
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-}
-
-const projects: Project[] = [
+const projects = [
   {
-    id: 1,
     title: "E-Commerce Website",
     description:
-      "A fully responsive e-commerce platform with a seamless checkout experience.",
-    image: "./webd.avif",
-    link: "#",
+      "VÉRITÉ ROYALE is a luxury perfume brand that embodies the essence of bespoke beauty. With a focus on creating enchanting scents that captivate and charm, this brand is dedicated to providing high-quality, unique fragrances that are both alluring and sophisticated. From the carefully selected ingredients to the exquisite packaging, every detail is meticulously crafted to provide an unparalleled sensory experience.",
+    image: "./Verite.png",
+    link: "https://verite-royale.netlify.app/",
   },
   {
-    id: 2,
-    title: "Portfolio Website",
+    title: "E-Commerce Website",
     description:
-      "A sleek personal portfolio showcasing creative works and projects.",
-    image: "./webd.avif",
-    link: "#",
+      "VÉRITÉ ROYALE is a luxury perfume brand that embodies the essence of bespoke beauty. With a focus on creating enchanting scents that captivate and charm, this brand is dedicated to providing high-quality, unique fragrances that are both alluring and sophisticated. From the carefully selected ingredients to the exquisite packaging, every detail is meticulously crafted to provide an unparalleled sensory experience.",
+    image: "./Verite.png",
+    link: "https://verite-royale.netlify.app/",
   },
   {
-    id: 3,
-    title: "Restaurant Ordering System",
-    description: "An intuitive food ordering system with real-time tracking.",
-    image: "./webd.avif",
-    link: "#",
+    title: "E-Commerce Website",
+    description:
+      "VÉRITÉ ROYALE is a luxury perfume brand that embodies the essence of bespoke beauty. With a focus on creating enchanting scents that captivate and charm, this brand is dedicated to providing high-quality, unique fragrances that are both alluring and sophisticated. From the carefully selected ingredients to the exquisite packaging, every detail is meticulously crafted to provide an unparalleled sensory experience.",
+    image: "./Verite.png",
+    link: "https://verite-royale.netlify.app/",
   },
   {
-    id: 3,
-    title: "Restaurant Ordering System",
-    description: "An intuitive food ordering system with real-time tracking.",
-    image: "./webd.avif",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Restaurant Ordering System",
-    description: "An intuitive food ordering system with real-time tracking.",
-    image: "./webd.avif",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Restaurant Ordering System",
-    description: "An intuitive food ordering system with real-time tracking.",
-    image: "./webd.avif",
-    link: "#",
+    title: "E-Commerce Website",
+    description:
+      "VÉRITÉ ROYALE is a luxury perfume brand that embodies the essence of bespoke beauty. With a focus on creating enchanting scents that captivate and charm, this brand is dedicated to providing high-quality, unique fragrances that are both alluring and sophisticated. From the carefully selected ingredients to the exquisite packaging, every detail is meticulously crafted to provide an unparalleled sensory experience.",
+    image: "./Verite.png",
+    link: "https://verite-royale.netlify.app/",
   },
 ];
 
-const OuerWork: React.FC = () => {
+const OurWork: React.FC = () => {
   return (
-    <section className="project-showcase">
-      <h2>Our Works</h2>
-      <div className="project-grid">
-        {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <img src={project.image} alt={project.title} />
-            <div className="overlay">
-              <h3>{project.title}</h3>
+    <div className="portfolio-container">
+      <h1 className="title">Our Work</h1>
+      <div className="projects">
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            className={`project ${index % 2 === 0 ? "even" : "odd"}`}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+          >
+            <div className="project-content">
+              <h2>{project.title}</h2>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} className="btn">
                 View Project
               </a>
             </div>
-          </div>
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+          </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default OuerWork;
+export default OurWork;

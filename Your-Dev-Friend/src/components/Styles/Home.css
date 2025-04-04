@@ -1,19 +1,35 @@
-
-
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #3d5fd7 0%, #6f3ec4 100%);
+  background-image: url("/bg.jpg");
+    background-size: auto;
+    /* background-position: center; */
   color: white;
 }
-
-.home
-{
+.home{
+  position: relative;
+  background-image: url("/bg.jpg");
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100%;
 }
-.hero {
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(111, 172, 242, 0.2);
+  /* Adjust transparency */
+}.hero {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2=rem;
+  position: relative;
 }
 
 .hero-content {
@@ -26,7 +42,6 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
-
 .hero p {
   font-size: 1.125rem;
   margin-bottom: 2rem;
