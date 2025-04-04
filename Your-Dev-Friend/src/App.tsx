@@ -11,6 +11,11 @@ import OurWork from "./Screens/OurWork";
 import PrivacyPolicy from "./components/Privacy/PrivacyPolicies";
 import TermsOfService from "./components/Privacy/TermsofService";
 import { PageTransition } from "./components/ui/PageTransition";
+import WebDevelopment from "./components/Services/WebDevelopment";
+import NotFound from "./components/ui/NotFound";
+import MobileDevelopment from "./components/Services/MobileDevelopment";
+import SEOTesting from "./components/Services/SEOTesting";
+import UXDesign from "./components/Services/UXDesign";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -37,6 +42,11 @@ const App: React.FC = () => {
           <Route path="/our-work" element={<OurWork />} />
           <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
           <Route path="/ServiceTerms" element={<TermsOfService />} />
+          <Route path="/WebDevelopment" element={<WebDevelopment />} />
+          * <Route path="/UXDesign" element={<UXDesign />} />
+          <Route path="/MobileDevelopment" element={<MobileDevelopment />} />
+           <Route path="/SEOTesting" element={<SEOTesting />} /> 
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer />
       </PageTransition>

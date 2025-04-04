@@ -85,31 +85,24 @@
   transform: rotate(-135deg);
 }
 
-/* Navigation Links */
 .nav-links {
   position: fixed;
   top: 0;
   right: -100%;
-  /* Start off-screen */
   width: 70%;
-  /* Take up 70% of the screen width */
   max-width: 300px;
-  /* Maximum width */
   height: 100vh;
-  background: linear-gradient(135deg, #2851e3 0%, #7d869e 100%);
+  background: linear-gradient(135deg, #4c789d -10%, #7d869e 100%);
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
-  /* Space for the navbar */
   transition: right 0.3s ease-in-out;
-  /* Animate from right */
   z-index: 1000;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links.active {
   right: 0;
-  /* Slide in from right */
 }
 
 .nav-links a {
@@ -131,11 +124,9 @@
     margin-left: 10%;
 }
 
-/* Larger screens */
 @media (min-width: 1024px) {
   .menu-toggle {
     display: none;
-    /* Hide hamburger on larger screens */
   }
 
   .nav-links {
@@ -149,7 +140,6 @@
     box-shadow: none;
     max-width: none;
     right: 0;
-    /* Always visible */
   }
 
   .nav-links a {

@@ -47,7 +47,7 @@ const Home: React.FC = () => {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <img
-              src="./webd.avif"
+              src="./bg2.gif"
               alt="Developer workspace with laptop showing code"
             />
           </motion.div>
