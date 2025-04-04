@@ -14,14 +14,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #3d5fd7;
 }
 
 .contact-container {
   display: flex;
   width: 100%;
-  background: linear-gradient(135deg, #3d5fd7 0%, #84b8e9 100%);
   max-width: 1200px;
   border-radius: 12px;
+  background-color: var(--background-color);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -31,16 +32,14 @@
   padding: 2.5rem;
 }
 
-/* Welcome Column Styles */
 .welcome-column {
-  /* background-color: #e6f2ff; */
   backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
 }
 
 .welcome-content h2 {
-  color: white;
+  color: #3d5fd7;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -63,17 +62,16 @@
 }
 
 .contact-method i {
-  color: var(--primary-color);
+color: #3d5fd7;
   font-size: 1.25rem;
 }
 
-/* Form Column Styles */
 .form-column {
 backdrop-filter: blur(2px);
 }
 
 .form-content h3 {
-  color: var(--text-color);
+  color: #3d5fd7;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -88,27 +86,26 @@ backdrop-filter: blur(2px);
   margin-bottom: 0.5rem;
   color: var(--text-color);
 }
-
 .form-group input,
 .form-group select,
 .form-group textarea {
   width: 80%;
   padding: 0.75rem;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
+  border: none;
+  border-left: 5px solid #5786cb;
+  border-bottom: 2px solid #5786cb;
+  border-radius: 5px;
   transition: border-color 0.3s ease;
   background-color: #f9fafb;
   color: black;
-  /* backdrop-filter: blur(2px); */
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
+  border-right: 2px solid #4697c6;
+  outline: paleturquoise;
 }
-
 .submit-btn {
   width:50%;
   margin-left: 15%;
@@ -141,7 +138,7 @@ backdrop-filter: blur(2px);
 }
 
 .info-content h3 {
-  color: var(--text-color);
+color: #3d5fd7;
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
 }
@@ -180,10 +177,7 @@ backdrop-filter: blur(2px);
 }
 
 .success-message {
-  /* text-align: center;
-  color: var(--secondary-color);
-  background-color: #10b981; */
-      background-color: rgb(209, 250, 229);
+       background-color: rgb(209, 250, 229);
         border-top-width: initial;
         border-right-width: initial;
         border-bottom-width: initial;
