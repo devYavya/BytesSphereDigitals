@@ -29,7 +29,7 @@ const teamMembers = [
 ];
 
 const MeetUs: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState(5);
+  const [, setTimeLeft] = useState(5);
 
   useEffect(() => {
     const timer = setInterval(() => {
