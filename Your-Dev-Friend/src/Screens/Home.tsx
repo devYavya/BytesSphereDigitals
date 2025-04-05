@@ -8,6 +8,10 @@ import MeetUs from "./MeetUs";
 const Home: React.FC = () => {
   return (
     <div>
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-fbafde17-b30f-48b4-bc27-f66876e4ce72" data-elfsight-app-lazy></div>
+    </div>
+    <div>
       <motion.div
         className="home"
         initial={{ opacity: 0 }}
