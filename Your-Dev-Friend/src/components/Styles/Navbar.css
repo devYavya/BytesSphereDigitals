@@ -92,7 +92,6 @@
   width: 70%;
   max-width: 300px;
   height: 100vh;
-  /* background: linear-gradient(135deg, #4c789d -10%, #7d869e 100%); */
   backdrop-filter: blur(50px);
   display: flex;
   flex-direction: column;

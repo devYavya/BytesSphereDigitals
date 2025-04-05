@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bytespheredigital.com/sitemap.xml
