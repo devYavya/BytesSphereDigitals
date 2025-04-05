@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "generate-sitemap": "node generate-sitemap.cjs",
+  "build": "tsc -b && vite build && npm run generate-sitemap"
   },
   "dependencies": {
     "components": "^0.1.0",
