@@ -4,6 +4,7 @@ import "../components/Styles/Home.css";
 import WhoWeAre from "./Whoweare";
 import { Link } from "react-router-dom";
 import MeetUs from "./MeetUs";
+import ToolsWeUse from "./ToolsWeUse";
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ const Home: React.FC = () => {
           src="https://static.elfsight.com/platform/platform.js"
           async
         ></script>
-        <div className="elfsight-app-fbafde17-b30f-48b4-bc27-f66876e4ce72"
+        <div
+          className="elfsight-app-fbafde17-b30f-48b4-bc27-f66876e4ce72"
           data-elfsight-app-lazy
         ></div>
       </div>
@@ -63,12 +65,20 @@ const Home: React.FC = () => {
             </motion.div>
           </div>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: false }}
+        >
+          <ToolsWeUse />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          viewport={{ once: false }} 
+          viewport={{ once: false }}
         >
           <WhoWeAre />
         </motion.div>
@@ -77,7 +87,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          viewport={{ once: false }} 
+          viewport={{ once: false }}
         >
           <MeetUs />
         </motion.div>
