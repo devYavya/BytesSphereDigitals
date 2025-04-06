@@ -1,6 +1,6 @@
 .footer {
-    background: rgb(0, 0, 0);
-    color: #cbd5e1;
+background: linear-gradient(135deg, #000000 0%, #415ba3 110%); 
+   color: #cbd5e1;
     padding: 3rem 0;
     position: absolute;
     width: 100%;
@@ -8,7 +8,6 @@
 }
 
 .footer-container {
-    background-color: black;
     margin: 0 auto;
     padding: 0 6.5rem;
     display: flex;

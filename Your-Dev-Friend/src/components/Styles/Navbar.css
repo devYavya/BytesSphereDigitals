@@ -3,10 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  /* background: linear-gradient(135deg, #2851e3 0%, #1e3a8a 100%); */
-  background-image: url("./bg.jpg");
-    background-size: cover;
-    /* background-position: center; */
+background: linear-gradient(135deg, #000000 0%, #415ba3 110%);
   color: white;
   position: relative;
   z-index: 1000;
