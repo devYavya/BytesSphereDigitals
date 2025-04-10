@@ -150,17 +150,21 @@ const ContactPage: React.FC = () => {
                     value={formData.projectType}
                     onChange={handleChange}
                   >
-                    <option value="website">Website Design</option>
-                    <option value="ecommerce">E-commerce Platform</option>
+                    <option value="website">Website Development</option>
+                    <option value="ecommerce">
+                      E-commerce/Ed-tech Platform
+                    </option>
+                    <option value="app">Mobile App</option>
+                    <option value="seo">Seo</option>
+                    <option value="ai">AI Integration</option>
+                    <option value="bot">Bot Support</option>
+                    <option value="seo">Seo</option>
                     <option value="branding">Brand Identity</option>
                     <option value="marketing">Digital Marketing</option>
-                    <option value="app">Mobile App</option>
-                    <option value="other">Other</option>
                   </select>
                 </div>
 
                 <div className="form-group">
-                  {/* <label htmlFor="message">Your Message</label> */}
                   <textarea
                     id="message"
                     name="message"
@@ -182,7 +186,7 @@ const ContactPage: React.FC = () => {
               </form>
             )}
           </div>
-        </div>       
+        </div>
       </div>
     </div>
   );
