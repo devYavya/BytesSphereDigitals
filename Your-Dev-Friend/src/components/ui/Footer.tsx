@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-company">
-          <div className="footer-logo">BytesSphere Digital</div>
+          <div className="footer-logo">ByteSphere Digital</div>
           <p className="footer-tagline">
             Crafting digital excellence for forward-thinking businesses.
           </p>
