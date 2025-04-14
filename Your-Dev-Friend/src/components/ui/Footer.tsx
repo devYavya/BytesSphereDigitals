@@ -34,14 +34,14 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-divider"></div>
         <div className="footer-copyright">
-          © 2025 BytesSphere Digital. All rights reserved.
+          © 2025 ByteSphere Digital. All rights reserved.
           <Link to="/Privacy-Policy">Privacy Policy</Link>
           <Link to="/ServiceTerms">Terms of Service</Link>
           <div className="footer-social">
             {/* <h3 className="footer-heading">Connect</h3> */}
             <div className="footer-social-icons">
               <a
-                href="https://github.com/devYavya"
+                href="https://www.linkedin.com/company/bytespheredigital/"
                 aria-label="GitHub"
                 className="footer-social-icon"
               >
