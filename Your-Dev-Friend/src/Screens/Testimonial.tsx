@@ -45,24 +45,24 @@ const Testimonials: React.FC = () => {
   const testimonials = [
     {
       quote:
-        "Your Dev Friend transformed our business with their innovative solutions and exceptional service.",
-      name: "Yavya Sharma",
-      title: "CEO",
-      company: "TechStart Inc.",
+        "ByteSphere Digital transformed our business with their innovative solutions and exceptional service.",
+      name: "Jatin Rajoria",
+      title: "Founder",
+      company: "Verite Royale",
     },
     {
       quote:
         "The team's expertise and dedication to our project exceeded all expectations.",
-      name: "Jatin Rajoria",
-      title: "CTO",
-      company: "GrowthLabs",
+      name: "Ansh Jain",
+      title: "Owner",
+      company: "Blood Connect",
     },
     {
       quote:
-        "Working with Your Dev Friend was a game-changer for our digital transformation.",
-      name: "Vidhi Jain",
-      title: "Director",
-      company: "InnovateCo",
+        "Working with ByteSphere Digital was a game-changer for our digital transformation.",
+      name: "Luv",
+      title: "Owner",
+      company: "Night&Day cafe",
     },
   ];
 
