@@ -1,9 +1,7 @@
 body {
   min-height: 100vh;
-  /* background: linear-gradient(135deg, #3d5fd7 0%, #6f3ec4 100%); */
   background-image: url("/bg.jpg");
-    background-size: auto;
-    /* background-position: center; */
+  background-size: auto;
   color: white;
 }
 .home{
@@ -96,7 +94,6 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  /* background: white; */
 }
 
 .image-container img {
@@ -134,10 +131,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 4rem;
+    padding: 2rem 3rem;
   }
-
-  .hero-content {
+   .hero-content {
     width: 50%;
     margin-bottom: 0;
   }

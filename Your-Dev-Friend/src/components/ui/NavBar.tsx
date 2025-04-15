@@ -15,8 +15,7 @@ const Navbar: React.FC = () => {
       <nav className="navbar">
         <Link to="/">
           <div className="logo">
-            <img src="./logomain.jpg" alt="Your-Dev-Friend" />
-            {/* ByteSphere Digital */}
+            <img src="./logomain.jpg" alt="ByteSphereDigital" />
           </div>
         </Link>
 
