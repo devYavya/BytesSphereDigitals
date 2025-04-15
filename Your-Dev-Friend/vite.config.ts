@@ -1,27 +1,22 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import  VitePluginSitemap  from 'vite-plugin-sitemap';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  plugins: [react()],
   base: '/',
-  plugins: [
-    react(),
-    VitePluginSitemap({
-      hostname: 'https://bytespheredigital.com', 
-    }),
-  ],
   server: {
     strictPort: true,
     proxy: {
-    },
+      // Proxy API requests if needed
+    }
   },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: './index.html',
-      },
-    },
-  },
-});
+        main: './index.html'
+      }
+    }
+  }
+})
