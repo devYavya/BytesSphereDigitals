@@ -150,12 +150,12 @@ const ContactPage: React.FC = () => {
                     value={formData.projectType}
                     onChange={handleChange}
                   >
+                    <option value="website">Select Project Type</option>
                     <option value="website">Website Development</option>
                     <option value="ecommerce">
                       E-commerce/Ed-tech Platform
                     </option>
                     <option value="app">Mobile App</option>
-                    <option value="seo">Seo</option>
                     <option value="ai">AI Integration</option>
                     <option value="bot">Bot Support</option>
                     <option value="seo">Seo</option>
