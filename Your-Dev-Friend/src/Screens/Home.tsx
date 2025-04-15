@@ -9,7 +9,7 @@ import ToolsWeUse from "./ToolsWeUse";
 const Home: React.FC = () => {
   return (
     <>
-      <div>
+{/*       <div>
         <script
           src="https://static.elfsight.com/platform/platform.js"
           async
@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           className="elfsight-app-fbafde17-b30f-48b4-bc27-f66876e4ce72"
           data-elfsight-app-lazy
         ></div>
-      </div>
+      </div> */}
       <div>
         <motion.div
           className="home"
