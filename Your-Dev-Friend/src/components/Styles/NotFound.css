@@ -1,165 +1,174 @@
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
+/* NotFound.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes beamGlow {
-    0% {
-        opacity: 0.3;
-    }
-
-    50% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 0.3;
-    }
-}
-
-.not-found-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.cyberpunk-container {
+    background: #0f0f1b;
     height: 100vh;
-    background-color: #0b0c10;
-    text-align: center;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffe7;
     position: relative;
     overflow: hidden;
 }
 
-.ufo-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.glitch-background {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
     width: 100%;
-    margin-bottom: -40px;
-    /* Moves UFO slightly up */
-    animation: float 3s infinite ease-in-out;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    animation: glitchBG 10s linear infinite;
+    opacity: 0.2;
 }
 
-.ufo {
+.glitch-content {
+    z-index: 2;
+    text-align: center;
+}
+
+.glitch {
+    font-size: 6rem;
     position: relative;
-    width: 150px;
-    height: 60px;
-    background: linear-gradient(to top, #444, #bbb);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+    color: #00ffe7;
+    animation: glitch 1.5s infinite;
+    line-height: 1.2;
 }
 
-.ufo .top {
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
     position: absolute;
-    top: -25px;
-    width: 70px;
-    height: 40px;
-    background: linear-gradient(to bottom, #999, #666);
-    border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    left: 0;
+    right: 0;
+    opacity: 0.7;
 }
 
-.ufo .middle {
-    position: absolute;
-    bottom: -12px;
-    width: 110px;
-    height: 25px;
-    background: linear-gradient(to top, #888, #555);
-    border-radius: 50%;
+.glitch::before {
+    color: #ff00c8;
+    animation: glitchTop 1s infinite;
+    z-index: -1;
 }
 
-.ufo .lights {
-    position: absolute;
-    bottom: -10px;
-    display: flex;
-    gap: 10px;
+.glitch::after {
+    color: #00ffe7;
+    animation: glitchBottom 1s infinite;
+    z-index: -2;
 }
 
-.ufo .lights span {
-    width: 12px;
-    height: 12px;
-    background: red;
-    border-radius: 50%;
-    box-shadow: 0px 0px 8px red;
+p {
+    color: #c4f1ff;
+    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
-.ufo .lights span:nth-child(2) {
-    background: yellow;
-    box-shadow: 0px 0px 8px yellow;
-}
-
-.ufo .lights span:nth-child(3) {
-    background: green;
-    box-shadow: 0px 0px 8px green;
-}
-
-.ufo .beam {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 160px;
-    background: radial-gradient(ellipse at top, rgba(255, 255, 100, 0.3), transparent);
-    animation: beamGlow 2s infinite;
-}
-
-.floating-text {
-    font-size: 5rem;
-    margin-top: -30px;
-    /* Adjusted to fit under UFO */
-    font-weight: bold;
-    color: #00ffcc;
-    text-shadow: 0px 0px 10px rgba(0, 255, 204, 0.6);
-    animation: float 3s infinite ease-in-out;
-}
-
-.not-found-container p {
-    font-size: 1.2rem;
-    margin-top: -10px;
-    color: #ddd;
-}
-
-.home-button {
+.btn-glow {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
+    margin-top: 2rem;
+    padding: 12px 30px;
+    background: none;
+    color: #00ffe7;
+    border: 2px solid #00ffe7;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
-.home-button:hover {
-    background: #0056b3;
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px dashed #00ffe7;
+    animation: borderPulse 2s linear infinite;
+    z-index: -1;
 }
 
-.fade-in {
-    animation: fadeIn 1.5s ease-in-out;
+.btn-glow:hover {
+    background: #00ffe7;
+    color: #0f0f1b;
+}
+
+/* Animations */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes glitchTop {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(-2px, 2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes glitchBG {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+@keyframes borderPulse {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
 }

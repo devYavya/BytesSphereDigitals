@@ -28,28 +28,51 @@ const ScrollToTop = () => {
 };
 
 const App: React.FC = () => {
+  const location = useLocation();
+  const isNotFound =
+    location.pathname !== "/" &&
+    ![
+      "/services",
+      "/contact",
+      "/solutions",
+      "/testimonials",
+      "/our-work",
+      "/Privacy-Policy",
+      "/ServiceTerms",
+      "/WebDevelopment",
+      "/UXDesign",
+      "/MobileDevelopment",
+      "/SEOTesting",
+    ].includes(location.pathname);
+
   return (
     <>
-      <Navbar />
+      {!isNotFound && <Navbar />}
       <ScrollToTop />
-      <PageTransition>
+      {!isNotFound ? (
+        <PageTransition>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/solutions" element={<ExpertiseSection />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/our-work" element={<OurWork />} />
+            <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
+            <Route path="/ServiceTerms" element={<TermsOfService />} />
+            <Route path="/WebDevelopment" element={<WebDevelopment />} />
+            <Route path="/UXDesign" element={<UXDesign />} />
+            <Route path="/MobileDevelopment" element={<MobileDevelopment />} />
+            <Route path="/SEOTesting" element={<SEOTesting />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </PageTransition>
+      ) : (
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/solutions" element={<ExpertiseSection />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/our-work" element={<OurWork />} />
-          <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
-          <Route path="/ServiceTerms" element={<TermsOfService />} />
-          <Route path="/WebDevelopment" element={<WebDevelopment />} />
-          * <Route path="/UXDesign" element={<UXDesign />} />
-          <Route path="/MobileDevelopment" element={<MobileDevelopment />} />
-           <Route path="/SEOTesting" element={<SEOTesting />} /> 
-          <Route path="*" element={<NotFound/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
-      </PageTransition>
+      )}
     </>
   );
 };
