@@ -9,7 +9,7 @@ import ToolsWeUse from "./ToolsWeUse";
 const Home: React.FC = () => {
   return (
     <>
-{/*       <div>
+      {/*       <div>
         <script
           src="https://static.elfsight.com/platform/platform.js"
           async
@@ -38,6 +38,13 @@ const Home: React.FC = () => {
                 We transform ideas into exceptional digital experiences,
                 combining cutting-edge technology with stunning design.
               </p>
+              {/* <h1>We Don’t Just Build Websites. We Build Confidence.</h1>
+              <p>
+                From elegant designs to rock-solid code — we craft digital
+                experiences that convert. Partner with us and elevate your
+                vision.
+              </p> */}
+
               <div className="cta-buttons">
                 <motion.div whileHover={{ scale: 1.1 }}>
                   <Link to="/contact" className="btn btn-primary">

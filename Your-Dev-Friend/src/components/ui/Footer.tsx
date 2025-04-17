@@ -44,6 +44,8 @@ const Footer: React.FC = () => {
                 href="https://github.com/devYavya/"
                 aria-label="GitHub"
                 className="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   className="footer-icon"
@@ -62,6 +64,8 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/company/bytespheredigital"
                 aria-label="LinkedIn"
                 className="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   className="footer-icon"
