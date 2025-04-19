@@ -17,7 +17,7 @@ const projects = [
     description:
       "Night and Day Cafe & Mart is your go-to neighborhood spot that never sleeps. Whether you’re craving a cozy cup of coffee, a late-night snack, or everyday essentials, we’ve got you covered—day or night. With a chill cafe vibe and a fully stocked mart, it’s the perfect blend of comfort, convenience, and community.",
     image: "./nightday.png",
-    link: "https://night-day.netlify.app",
+    link: "https://night-day-cafe-face.onrender.com/",
   },
   {
     title: "Deshore",
